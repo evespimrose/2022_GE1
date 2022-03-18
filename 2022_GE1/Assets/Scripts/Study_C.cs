@@ -6,7 +6,6 @@ public class Study_C : MonoBehaviour
 {
     private void Start()
     {
-        var b = transform.parent;
-        print(b.name);
+        transform.parent = null;
     }
 }
