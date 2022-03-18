@@ -11,7 +11,12 @@ public class Study_A : MonoBehaviour
     {
         m_studyBGameObject = new GameObject(name: "B");
         m_studyBGameObject.AddComponent<Study_B>();
+        m_studyBGameObject.AddComponent<Study_C>();
         print(m_studyBGameObject.name);
-        Destroy(m_studyBGameObject);
+
+        // var study_b = m_studyBGameObject.GetComponent<Study_B>();
+        // study_b.SendMessage("SayHello");
+        
+        m_studyBGameObject.SendMessage(methodName:"Say hello");
     }
 }
