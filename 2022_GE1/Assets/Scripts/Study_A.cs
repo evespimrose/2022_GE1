@@ -9,7 +9,9 @@ public class Study_A : MonoBehaviour
 
     private void Start()
     {
-        m_studyBGameObject = GameObject.FindObjectOfType<Study_B>().gameObject;
+        m_studyBGameObject = new GameObject(name: "B");
+        m_studyBGameObject.AddComponent<Study_B>();
         print(m_studyBGameObject.name);
+        Destroy(m_studyBGameObject);
     }
 }
