@@ -7,14 +7,15 @@ public class Study_1 : MonoBehaviour
 {
     private const float AttackInterval = 3f;
     private float _attackIntervalTimer;
+
+    private void Start()
+    {
+        Invoke(methodName:"PrintText",time:3f);
+    }
+    
     void Update()
     {
-        _attackIntervalTimer += Time.deltaTime;
-        if (_attackIntervalTimer > 3f)
-        {
-            PrintText();
-            _attackIntervalTimer = 0f;
-        }
+        
     }
 
     void PrintText()
