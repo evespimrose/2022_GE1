@@ -6,6 +6,5 @@ public class Study_B : MonoBehaviour
 {
     private void SayHello()
     {
-        print(message: "안녕하세요");
     }
 }

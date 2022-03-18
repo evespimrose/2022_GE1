@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Study_C : MonoBehaviour
 {
-    private void SayHello()
+    private void Start()
     {
-        print(message: "안녕하세요. C에서 인사해요");
+        var b = transform.parent;
+        print(b.name);
     }
 }
