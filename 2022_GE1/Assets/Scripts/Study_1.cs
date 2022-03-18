@@ -1,19 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Study_1 : MonoBehaviour
 {
-    Rigidbody rigid;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rigid = gameObject.GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
+    private const float AttackInterval = 3f;
+    private float _attackIntervalTimer;
     void Update()
     {
-        
+        _attackIntervalTimer += Time.deltaTime;
+        if (_attackIntervalTimer > 3f)
+        {
+            PrintText();
+            _attackIntervalTimer = 0f;
+        }
+    }
+
+    void PrintText()
+    {
+        print(message:"공격!");
     }
 }
