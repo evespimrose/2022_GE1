@@ -18,6 +18,6 @@ public abstract class Monster : MonoBehaviour
         
     }
 
-    protected abstract void Cry();
+    public abstract void Cry();
 
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Slyme : Monster
 {
     // Start is called before the first frame update
-    protected override void Cry()
+    public override void Cry()
     {
         print(message:"'철퍽철퍽' 투명슬라임이 통통 뛰었다.");
     }
