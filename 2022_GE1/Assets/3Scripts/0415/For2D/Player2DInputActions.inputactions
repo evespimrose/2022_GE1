@@ -1,0 +1,67 @@
+{
+    "name": "Player2DInputActions",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "45d4a6d1-4e67-4e85-ab7f-0a13487d4a0e",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "667cbbff-967b-426d-bdc9-d32f8e726ea4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f129ac7a-77d6-4924-8c14-b09cf94278f0",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "783d5f0b-a5ce-4440-a485-40bf929910a0",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a19a48e-758a-4540-899e-e8ad0245eead",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5310282d-18fc-4d92-aae6-a9e93e83826f",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
