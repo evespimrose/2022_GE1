@@ -16,6 +16,15 @@ public class Npc : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
     }
 
+    private void Start()
+    {
+        EventManager.Instance.Subscribe("game_over", OnGameOver);
+    }
+
+    private void OnGameOver(object param)
+    {
+        gameObject.SetActive(false);
+    }
     private void Update()
     {
     }
