@@ -4042,6 +4042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8ace11f09d97645a455749a6a00c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sightAngle: 45
   target: {fileID: 1309086590}
 --- !u!1 &1751669235
 GameObject:
