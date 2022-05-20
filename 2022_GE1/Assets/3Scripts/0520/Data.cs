@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
 
 [Serializable]
 public class Data
@@ -12,5 +13,7 @@ public class Data
     public int age;
     public float height;
     public Vector3 playerPosition;
+
+    [JsonIgnore] // 직렬화에서 제외
     public Quaternion playerRotation;
 }
