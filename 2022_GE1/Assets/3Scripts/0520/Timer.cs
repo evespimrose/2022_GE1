@@ -8,15 +8,20 @@ public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
 
-    private float _elapsedTime;
-
-    private void Update()
+    private void Start()
     {
-        _elapsedTime += Time.deltaTime;
-        var flooredValue = Mathf.Floor(_elapsedTime);
+        StartCoroutine(Time());
+    }
 
-        timerText.text = $"{flooredValue:80}";
+    private IEnumerator Time()
+    {
+        var _elapsedTime = 0f;
+        while (true)
+        {
+            yield return new WaitForSeconds(1f);
+            _elapsedTime++;
 
-        timerText.text = _elapsedTime.ToString();
+            timerText.text = _elapsedTime.ToString();
+        }
     }
 }
