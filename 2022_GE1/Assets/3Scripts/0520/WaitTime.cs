@@ -8,14 +8,14 @@ public class WaitTime : MonoBehaviour
 {
     void Start()
     {
-        Task.Run(Wait);
+        var thread = new Thread(Run);
+        thread.Start();
     }
 
-    // async : 비동기로 작동하는 메서드
-    async void Wait()
+    private void Run()
     {
         print("Hey");
-        await Task.Delay(1000);
+        Thread.Sleep(1000);
         print("Hi");
     }
 }
